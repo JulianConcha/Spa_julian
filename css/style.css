@@ -1,0 +1,464 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+/* --------------------seccion del header--------------- */
+header {
+  padding: auto;
+  background-color: #fdf9f0;
+  margin-bottom: 20px;
+}
+
+.logo_iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconos {
+  font-size: 35px;
+  transition: all 0.5s;
+}
+
+.iconos i:hover {
+  color: #ff3281;
+}
+hr {
+  padding: 10px;
+  background-color: #ff3281;
+}
+
+.barras {
+  display: none;
+  background-color: #ff3281;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav {
+  border: 2px black solid;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #ff3281;
+}
+
+/* ---------------seccion del banner------------- */
+
+.banner {
+  background-image: url(../imagenes/slide1.jpg);
+  height: 520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+.banner_informacion {
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+  text-decoration: none;
+  border: 1px #ff3281 solid;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+.transparente {
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.transparente:hover {
+  background-color: #ff3281;
+}
+
+/* seccion de la imagen velas con texto */
+
+.toda_informacion {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primera_informacion {
+  max-width: 400px;
+}
+
+.primera_informacion h2 {
+  font-size: 28px;
+}
+
+.imagen {
+  max-width: 600px;
+}
+.imagen_tamano {
+  max-width: 600px;
+}
+
+.imagen_width {
+  max-width: 100%;
+  border: 10px green solid;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.imagen_width:hover {
+  opacity: 1;
+}
+/* seccion de talento */
+
+.talento_background {
+  background-color: #fff9f1;
+  padding: 20px;
+}
+
+.centrar {
+  text-align: center;
+  padding: 15px;
+}
+
+.foto_principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.foto_principal figure {
+  width: 580px;
+}
+
+.foto_principal figure img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.foto_principal figure img:hover {
+  filter: sepia();
+}
+.informacion_talento {
+  max-width: 580px;
+}
+
+.informacion_talento h2 {
+  font-size: 20px;
+}
+.seccion_masajes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.informacion_masajes {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
+  background-color: #ffe8a4;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.informacion_masajes figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.informacion_masajes figure img {
+  border: 5px white solid;
+  border-radius: 50%;
+  margin-top: 20px;
+  transform: scale(1);
+  transition: all 0.5s;
+  max-width: 100%;
+  max-height: 100%;
+}
+.informacion_masajes figure img:hover {
+  transform: scale(2);
+}
+
+.btn_masajes {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #ff3281;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 20px;
+  top: 100%;
+}
+
+/* ----------------ultima seccion---------------- */
+.fotos {
+  display: flex;
+  margin: auto;
+}
+
+.dos_fotos {
+  max-width: 600px;
+  max-height: 562px;
+  display: block;
+  margin: 0;
+}
+
+.seccion_uno {
+  display: flex;
+  max-width: 600px;
+  max-height: 281px;
+  margin: 0;
+}
+.seccion_uno figure {
+  max-width: 300px;
+  max-height: 169px;
+  margin: 0;
+}
+
+.seccion_uno figure img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.dos_fotos {
+  display: block;
+}
+
+.foto_unica {
+  max-width: 600px;
+}
+
+.foto_unica figure {
+  max-width: 600px;
+}
+
+.foto_unica figure img {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  border-bottom: 13px #ff3281 solid;
+  padding: auto;
+  margin-top: 0px;
+}
+
+.ultima_foto {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.flecha {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  font-size: 40px;
+  background-color: #ff3281;
+  color: white;
+  border-radius: 50%;
+}
+
+/* -------------media query tablet------------------ */
+
+@media screen and (max-width: 880px) {
+  .toda_informacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .primera_informacion {
+    max-width: 750px;
+    text-align: center;
+  }
+  .transparente {
+    background-color: #ff3281;
+  }
+
+  .toda_informacion-parrajo {
+    max-width: 700px;
+    text-align: start;
+  }
+  .imagen_width {
+    max-width: 100%;
+    border: 10px green solid;
+    opacity: 1;
+  }
+
+  .foto_principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .foto_principal figure img {
+    border-radius: 10px;
+    filter: sepia();
+  }
+  .informacion_talento {
+    width: 655px;
+  }
+
+  .informacion_masajes {
+    margin: 15px;
+    max-width: 700px;
+  }
+
+  .fotos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 700px;
+    max-width: auto;
+  }
+}
+
+/* ------------media query movil------- */
+
+@media screen and (max-width: 550px) {
+  nav {
+    display: none;
+  }
+  .logo_iconos {
+    display: block;
+    text-align: center;
+  }
+  .movil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .barras {
+    display: block;
+    margin: 8px;
+  }
+
+  .transparente {
+    background-color: #ff3281;
+  }
+
+  .imagen {
+    max-width: 450px;
+  }
+  .imagen_tamano {
+    max-width: 450px;
+  }
+
+  .imagen_width {
+    max-width: 100%;
+    border: 10px green solid;
+    opacity: 1;
+  }
+
+  .primera_informacion h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .toda_informacion-parrajo {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .imagen_width:hover {
+    opacity: 1;
+  }
+
+  .foto_principal figure {
+    width: 320px;
+  }
+
+  .foto_principal figure img {
+    width: 100%;
+    border-radius: 10px;
+    filter: sepia();
+  }
+  .informacion_talento {
+    max-width: 320px;
+  }
+  .informacion_talento h2 {
+    font-size: 20px;
+  }
+  .informacion_talento p {
+    font-size: 15px;
+  }
+
+  .informacion_masajes p {
+    margin: 0px 15px;
+  }
+
+  .seccion_masajes h2 {
+    font-size: 20px;
+  }
+
+  .seccion_masajes p {
+    font-size: 14px;
+  }
+
+  .fotos {
+    max-width: 350px;
+    height: 800px;
+  }
+  .seccion_uno {
+    display: block;
+    max-width: 350px;
+  }
+
+  .seccion_uno figure {
+    max-width: 350px;
+  }
+
+  .seccion_uno figure img {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    border-bottom: 13px #ff3281 solid;
+    padding: auto;
+    margin-top: 100px;
+  }
+}
+.ultima_foto figure {
+  max-width: 100px;
+}
+
+.ultima_foto figure img {
+  max-width: 100%;
+}
